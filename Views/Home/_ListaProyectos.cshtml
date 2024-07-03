@@ -1,0 +1,26 @@
+﻿@model List<Proyecto>
+
+@if (Model != null)
+{
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var proyecto in Model)
+            {
+                <div class="col gx-5">
+                    <div class="card h-100">
+                        <img src="@proyecto.ImagenURL" class="card-img-top" />
+                        <div class="card-body">
+                            <h4 class="card-title">@proyecto.Titulo</h4>
+                            <p class="card-text">@proyecto.Descripcion</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-outline-primary" href="@proyecto.Link" target="_blank">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+}

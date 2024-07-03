@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+
+    <style>
+        body{
+            background-color: #DFDFDF
+        }
+    </style>
+}
+
+<h1>Formulario de Contacto</h1>
+
+<div class="container mt-5 py-2 pb-4" style="background-color:white;border-radius:1rem 1rem 1rem 1rem">
+    <form asp-controller="Home" asp-action="Contacto">
+        <div class="mb-3 py-2">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" />
+        </div>
+        <div class="mb-3 py-2">
+            <label for="Email" class="form-label">E-Mail</label>
+            <input type="text" class="form-control" id="Email" name="Email" />
+        </div>
+        <div class="mb-3 py-2">
+            <label for="Nombre" class="form-label">Mensaje</label>
+            <textarea rows="3" class="form-control" id="Mensaje" name="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary px-3">Enviar</button>
+    </form>
+</div>

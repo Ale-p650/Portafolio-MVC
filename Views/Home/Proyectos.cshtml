@@ -1,0 +1,12 @@
+﻿@model List<Proyecto>
+
+@{
+    ViewData["Title"] = "Proyectos";
+}
+<link rel="stylesheet" href="~/css/asd.css" asp-append-version="true" />
+
+
+    <partial name="_PresentacionProyectos" model="@Model"></partial>
+    <partial name="_ListaProyectos" model="@Model"></partial>
+
+
